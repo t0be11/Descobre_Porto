@@ -9,6 +9,10 @@
     <meta name="description"
           content="Contacta a equipa do Descobre o Porto.">
     <title>Contactos | Descobre o Porto</title>
+     <link rel="stylesheet" href="CSS/style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">!-->
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -37,14 +41,29 @@
             <form action="#" method="get">
 
                 <p>
-                    <label for="nome">Nome:</label>
+                    Os campos assinalados com
+                    <span class="obrigatorio"
+                          aria-hidden="true">*</span>
+                    são obrigatórios.
+                </p>
+
+                <p>
+                    <label for="nome">
+                        Nome:
+                        <span class="obrigatorio"
+                              aria-hidden="true">*</span>
+                    </label>
                     <input type="text" id="nome"
                            name="nome" required
                            minlength="2">
                 </p>
 
                 <p>
-                    <label for="email">Email:</label>
+                    <label for="email">
+                        Email:
+                        <span class="obrigatorio"
+                              aria-hidden="true">*</span>
+                    </label>
                     <input type="email" id="email"
                            name="email" required>
                 </p>
@@ -55,7 +74,7 @@
                            name="telefone"
                            pattern="[0-9]{9}"
                            title="Introduz 9 dígitos."
-                           placeholder="912345678">
+                           placeholder="123456789">
                 </p>
 
                 <p>
@@ -76,6 +95,8 @@
                 <p>
                     <label for="motivo">
                         Motivo do contacto:
+                        <span class="obrigatorio"
+                              aria-hidden="true">*</span>
                     </label>
                     <select id="motivo"
                             name="motivo" required>
@@ -95,7 +116,11 @@
                 </p>
 
                 <p>
-                    <label for="mensagem">Mensagem:</label>
+                    <label for="mensagem">
+                        Mensagem:
+                        <span class="obrigatorio"
+                              aria-hidden="true">*</span>
+                    </label>
                     <textarea id="mensagem"
                               name="mensagem"
                               rows="5"
@@ -103,13 +128,16 @@
                 </p>
 
                 <p>
-                    <input type="checkbox"
-                           id="privacidade"
-                           name="privacidade"
-                           required>
+                    
                     <label for="privacidade">
                         Compreendo que este formulário
                         é apenas uma demonstração.
+                        <input type="checkbox"
+                           id="privacidade"
+                           name="privacidade"
+                           required>
+                        <span class="obrigatorio"
+                              aria-hidden="true">*</span>
                     </label>
                 </p>
 

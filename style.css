@@ -1,0 +1,295 @@
+/* 1. ESTILOS GERAIS */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F7FA;
+    color: #17324D;
+    line-height: 1.6;
+    }
+
+/* 2. CABEÇALHO */
+
+header {
+    background-color: #17324D;
+    color: #FFFFFF;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* 3. MENU DE NAVEGAÇÃO */
+
+nav {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #176087;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 6px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #176087;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav a:focus-visible {
+    outline: 3px solid #17324D;
+    outline-offset: 3px;
+}
+
+/* 4. CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+section {
+    background-color: #DCECF5;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+article {
+    background-color: #E9F4EE;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+h2 {
+    color: #17324D;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* 5. IMAGENS */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+    margin-top: 15px;
+}
+
+/* 6. TABELAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #17324D;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #17324D;
+    padding: 10px;
+}
+
+/* 7. FORMULÁRIOS */
+
+form {
+    padding: 20px;
+    background-color: #DCECF5;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    max-width: 100%;
+    border: 1px solid #17324D;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #176087;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17324D;
+}
+
+.obrigatorio {
+    color: #9B1C1C;
+    font-weight: bold;
+}
+
+
+/* 8. RODAPÉ */
+
+footer {
+    background-color: #17324D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* 9.MODELO DE CAIXA */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 10.ESPAÇAMENTOS DE CONTEÚDO */
+main {
+    padding: 24px;
+}
+
+section, article {
+    margin-bottom: 24px;
+}
+
+/* 11.TABELAS*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #17324D;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F3F7FA;
+}
+
+/* 12.FORMULÁRIOS*/
+
+form {
+    padding: 24px;
+    border-radius: 12px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    font: inherit;
+}
+
+form button {
+    margin-top: 16px;
+}
+
+/* 13.ACESSIBILIDADE*/
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #17324D;
+    outline-offset: 3px;
+}
+
+/* 14. IMAGENS COM LEGENDA */
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #17324D;
+}
+
+/* 15.INFORMAÇÃO EXPANSÍVEL */
+
+details {
+    background-color: #DCECF5;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #17324D;
+}
+
+/* 16.DATAS */
+
+time {
+    font-weight: bold;
+}
+/* 17.DESTAQUE DO MENU AO NAVEGAR COM O TECLADO */
+
+nav a:focus,
+nav a:focus-visible {
+    outline: 4px solid #FFD966 !important;
+    outline-offset: 4px;
+}
+main a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #17324D;
+    outline-offset: 3px;
+}
+
