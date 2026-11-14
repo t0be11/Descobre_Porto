@@ -1,0 +1,135 @@
+
+/* E6 - Personalizações do Bootstrap */
+
+/* 1. Cartões */
+.card {
+    border: 1px solid #DCECF5;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* 2. Títulos dos cartões */
+.card-title {
+    color: #17324D;
+    font-weight: bold;
+}
+
+/* 3. Botões principais */
+.btn-primary {
+    background-color: #176087;
+    border-color: #176087;
+    border-radius: 30px;
+}
+
+/* 4. Caixas de informação */
+.alert-info {
+    background-color: #DCECF5;
+    color: #17324D;
+    border-color: #176087;
+}
+
+/* 5. Etiquetas */
+.badge {
+    background-color: #17324D;
+    color: #FFFFFF;
+    padding: 8px;
+}
+
+/* E6 - Alinhamento dos locais turísticos */
+
+/* Imagens com as mesmas proporções */
+.galeria-locais img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Cada cartão mantém a sua altura independente */
+.galeria-locais {
+    align-items: start;
+}
+
+/* Organização do conteúdo */
+.galeria-locais section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaço entre o texto e as curiosidades */
+.galeria-locais details {
+    margin-top: 16px;
+}
+
+/* E6 - Personalização dos cartões dos locais */
+
+.galeria-locais .card {
+    background-color: #DCECF5;
+    border-radius: 16px;
+    padding: 0;
+}
+
+/* Espaçamento interior dos cartões */
+
+.galeria-locais .card-body {
+    padding: 25px;
+}
+
+/* Espaçamento dos títulos */
+
+.galeria-locais .card-title {
+    margin-bottom: 12px;
+}
+
+/* Espaçamento das etiquetas */
+
+.galeria-locais .badge {
+    margin-bottom: 12px;
+}
+
+/* E6 - Botão Limpar */
+
+.btn-outline-primary {
+    color: #176087;
+    border-color: #176087;
+    border-radius: 30px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #17324D;
+    border-color: #17324D;
+    color: #FFFFFF;
+}
+
+/* E6 - Grelha Bootstrap da gastronomia */
+
+/* Espaçamentos e altura dos conteúdos */
+.gastronomia-grid section {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+/* Imagens com dimensões consistentes */
+.gastronomia-grid img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* E6 - Integração do Bootstrap Grid nos locais */
+
+.galeria-locais > .row {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Manter a tipografia do projeto */
+
+header h1 {
+    font-weight: 700;
+}   
+/* E6 - Manter os títulos */
+
+section h2 {
+    font-weight: 700;
+}
