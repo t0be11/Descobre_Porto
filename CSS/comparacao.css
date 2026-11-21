@@ -1,0 +1,82 @@
+
+/* ===================================
+   E7 - COMPARAÇÃO DE FRAMEWORKS
+=================================== */
+
+/* 1. Organização das três demonstrações */
+
+.comparacao-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 280px), 1fr)
+    );
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* 2. Caixas de comparação */
+
+.comparacao-demo {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* 3. Títulos das frameworks */
+
+.comparacao-demo h3 {
+    color: #17324D;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* 4. Área de demonstração */
+
+.comparacao-demo iframe {
+    display: block;
+    width: 100%;
+    height: 390px;
+    border: 1px solid #DCECF5;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* 5. Apresentação comum dos exemplos */
+
+.pagina-demo {
+    margin: 0;
+    padding: 16px;
+    background-color: #F3F7FA;
+}
+
+.demo-cartao {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+/* 6. Mesmas dimensões das imagens */
+
+.demo-imagem {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+/* E7 - Aumentar a altura das demonstrações */
+
+.comparacao-demo iframe {
+    height: 520px;
+}
+
+/* E7 - Tabela comparativa responsiva */
+
+.tabela-comparacao {
+    width: 100%;
+    overflow-x: auto;
+}
