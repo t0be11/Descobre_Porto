@@ -6,78 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conhece alguns dos locais mais emblemáticos do Porto.">
     <title>Locais a Visitar | Descobre o Porto</title>
-     <link rel="stylesheet" href="CSS/style.css">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">!-->
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
 <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/bootstrap-custom.css">
 </head>
 <body>
     <header>
         <h1>Locais a Visitar</h1>
 
-       
 <nav aria-label="Navegação principal">
     <a href="index.html">Início</a>
     <a href="locais.html">Locais a visitar</a>
     <a href="gastronomia.html">Gastronomia</a>
     <a href="contactos.html">Contactos</a>
     <a href="acessibilidade.html">Acessibilidade</a>
+    <a href="comparacao.html">Comparação</a>
 </nav>
 
     </header>
 
-    <main>
-        <section>
-            <h2>Ribeira do Porto</h2>
-            <img src="imagens/ribeira.jpg"
-                 alt="Casas tradicionais coloridas na Ribeira do Porto"
-                 width="400">
-            <p>
-                A Ribeira é uma das zonas mais conhecidas
-                da cidade, situada junto ao rio Douro.
-            </p>
+<main>
 
-        <details>
-            <summary>
-                 O que torna a Ribeira um local tão único?
-            </summary>
+    <div class="galeria-locais">
 
-            <p>
-                A Ribeira é uma das zonas mais conhecidas
-                do Porto. Situa-se junto ao rio Douro e
-                destaca-se pelas suas ruas estreitas,
-                edifícios coloridos e restaurantes
-                tradicionais.
-            </p>
-        </details>
+        <!-- E6 - Grelha Bootstrap -->
+        <div class="row g-4">
 
-        </section>
+            <!-- Primeira coluna: Ribeira -->
+            <div class="col-12 col-md-6">
 
-        <section>
-            <h2>Torre dos Clérigos</h2>
-            <img src="imagens/clerigos.jpg"
-                 alt="Torre dos Clérigos vista a partir da rua"
-                 width="400">
-            <p>
-                A Torre dos Clérigos é um dos monumentos
-                mais emblemáticos do Porto.
-            </p>
+                <!-- Componente Bootstrap: Card -->
+                <section class="card">
+                    <div class="card-body">
 
-        <details>
-            <summary>
-                É possível subir à Torre dos Clérigos?
-            </summary>
+                        <h2 class="card-title">Ribeira do Porto</h2>
 
-            <p>
-                Sim. Os visitantes podem subir à torre
-                através de uma escadaria e apreciar
-                uma vista panorâmica sobre a cidade
-                 do Porto.
-            </p>
-        </details>
+                        <!-- Componente Bootstrap: Badge -->
+                        <span class="badge rounded-pill">
+                            Zona histórica
+                        </span>
 
-        </section>
-    </main>
+                        <picture>
+                            <source srcset="imagens/ribeira.webp" type="image/webp">
+                            <img src="imagens/ribeira.jpg"
+                             class="img-fluid"
+                             alt="Casas tradicionais coloridas na Ribeira do Porto" width="692" height="289">
+                        </picture>
+
+                        <p class="card-text">
+                            A Ribeira é uma das zonas mais conhecidas
+                            da cidade, situada junto ao rio Douro.
+                        </p>
+
+                        <details>
+                            <summary>
+                                O que torna a Ribeira um local tão único?
+                            </summary>
+
+                            <p>
+                                A Ribeira é uma das zonas mais conhecidas
+                                do Porto. Situa-se junto ao rio Douro e
+                                destaca-se pelas suas ruas estreitas,
+                                edifícios coloridos e restaurantes
+                                tradicionais.
+                            </p>
+                        </details>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Segunda coluna: Torre dos Clérigos -->
+            <div class="col-12 col-md-6">
+
+                <!-- Componente Bootstrap: Card -->
+                <section class="card">
+                    <div class="card-body">
+
+                        <h2 class="card-title">Torre dos Clérigos</h2>
+
+                        <!-- Componente Bootstrap: Badge -->
+                        <span class="badge rounded-pill">
+                            Monumento
+                        </span>
+
+                        <picture>
+                            <source srcset="imagens/clerigos.webp" type="image/webp">
+                            <img src="imagens/clerigos.jpg"
+                             class="img-fluid"
+                             alt="Torre dos Clérigos vista de cima, rodeada pelos edifícios do centro do Porto" width="738" height="414" loading="lazy">
+                        </picture>
+
+                        <p class="card-text">
+                            A Torre dos Clérigos é um dos monumentos
+                            mais emblemáticos do Porto.
+                        </p>
+
+                        <details>
+                            <summary>
+                                É possível subir à Torre dos Clérigos?
+                            </summary>
+
+                            <p>
+                                Sim. Os visitantes podem subir à torre
+                                através de uma escadaria e apreciar
+                                uma vista panorâmica sobre a cidade
+                                do Porto.
+                            </p>
+                        </details>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
 
     <footer>
         <p>Descobre o Porto - Projeto académico</p>
