@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Comparação de frameworks CSS no projeto Descobre o Porto.">
+
+    <title>Comparação de Frameworks | Descobre o Porto</title>
+
+    <!-- CSS existente do projeto -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- CSS específico da comparação -->
+    <link rel="stylesheet" href="CSS/comparacao.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Comparação de Frameworks CSS</h1>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="locais.html">Locais a visitar</a>
+            <a href="gastronomia.html">Gastronomia</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="acessibilidade.html">Acessibilidade</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bootstrap, Foundation e W3.CSS</h2>
+
+            <p>
+                Nesta página comparamos três frameworks CSS,
+                utilizando o mesmo cartão turístico da Ribeira
+                do Porto.
+            </p>
+
+            <p>
+                O objetivo é observar as diferenças de
+                apresentação e implementação, mantendo
+                o mesmo conteúdo.
+            </p>
+
+            <!-- E7 - Comparação das três frameworks -->
+            <div class="comparacao-grid">
+
+                <article class="comparacao-demo">
+                    <h3>Bootstrap 5.3.8</h3>
+
+                    <iframe
+                        src="comparacao/bootstrap.html"
+                        title="Cartão da Ribeira com Bootstrap"
+                        loading="lazy">
+                    </iframe>
+                </article>
+
+                <article class="comparacao-demo">
+                    <h3>Foundation 6.9.0</h3>
+
+                    <iframe
+                        src="comparacao/foundation.html"
+                        title="Cartão da Ribeira com Foundation"
+                        loading="lazy">
+                    </iframe>
+                </article>
+
+                <article class="comparacao-demo">
+                    <h3>W3.CSS 6</h3>
+
+                    <iframe
+                        src="comparacao/w3css.html"
+                        title="Cartão da Ribeira com W3.CSS"
+                        loading="lazy">
+                    </iframe>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- E7 - Tabela comparativa das frameworks -->
+
+        <section>
+            <h2>Comparação dos resultados</h2>
+
+            <p>
+                Para comparar as três frameworks, utilizámos
+                o Google Chrome e a ferramenta Network.
+                Desativámos a cache e analisámos os valores
+                apresentados durante o carregamento das páginas.
+            </p>
+
+            <div class="tabela-comparacao">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Critério</th>
+                            <th scope="col">Bootstrap</th>
+                            <th scope="col">Foundation</th>
+                            <th scope="col">W3.CSS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CSS da framework</td>
+                            <td>23,4 kB</td>
+                            <td>14,7 kB</td>
+                            <td>6,4 kB</td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS total transferido</td>
+                            <td>25,0 kB</td>
+                            <td>16,3 kB</td>
+                            <td>8,0 kB</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pedidos de rede</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dados transferidos</td>
+                            <td>74,6 kB</td>
+                            <td>65,7 kB</td>
+                            <td>57,4 kB</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tamanho dos recursos</td>
+                            <td>282 kB</td>
+                            <td>181 kB</td>
+                            <td>77,2 kB</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tempo de carregamento</td>
+                            <td>185 ms</td>
+                            <td>127 ms</td>
+                            <td>87 ms</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <p>
+                Os valores foram obtidos numa medição por
+                framework, com a cache desativada e sem
+                limitação de velocidade. Os cinco pedidos
+                incluem a ligação do Live Server.
+            </p>
+
+            <h2>Análise dos resultados</h2>
+
+            <p>
+                Ao analisarmos os resultados, verificámos
+                que o W3.CSS apresentou os valores mais baixos,
+                tanto no tamanho dos ficheiros CSS como
+                no tempo de carregamento.
+            </p>
+
+            <p>
+                O Foundation ficou numa posição intermédia,
+                enquanto o Bootstrap apresentou os valores
+                mais elevados.
+            </p>
+
+            <p>
+                Apesar disso, estes resultados não significam
+                que o Bootstrap seja uma má escolha,
+                uma vez que os testes foram realizados
+                apenas com um cartão e não com um
+                website completo.
+            </p>
+
+            <h2>Framework escolhida</h2>
+
+            <p>
+                Decidimos manter o Bootstrap 5.3.8
+                no nosso projeto Descobre o Porto.
+            </p>
+
+            <p>
+                Embora o W3.CSS tenha apresentado melhores
+                resultados nos testes, já tínhamos utilizado
+                o Bootstrap na E6 para criar cartões,
+                etiquetas, botões, avisos e grelhas responsivas.
+            </p>
+
+            <p>
+                Por esse motivo, considerámos que não fazia
+                sentido alterar a framework nesta fase,
+                pois teríamos de adaptar componentes
+                que já estavam desenvolvidos e a
+                funcionar corretamente.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Descobre o Porto - Projeto académico</p>
+    </footer>
+
+</body>
+</html>
